@@ -7,13 +7,7 @@
 </head>
 <body>
     <?php
-    // ini embedded script
-        echo "Hello World";
+    echo "Hello World";
     ?>
 </body>
 </html>
-
-<?php
-// ini non-embeded script
-echo "Hello World";
-?>
