@@ -34,7 +34,7 @@ Berikut adalah struktur folder yang akan kita gunakan dalam repository ini agar 
 
 1. **Fork Repository**  
    Fork repository ini ke akun GitHub Anda.
-
+   
 2. **Pilih Metode Pengerjaan**
 
    - **Metode A (Clone ke Komputer Lokal):**
