@@ -1,0 +1,24 @@
+<?php
+//4.1
+$height = [
+    "Andy" => "176", "Barry" => "165", "Charlie" => "170",
+    "David" => "180", "Ethan" => "172", "Frank" => "168", 
+    "George" => "175", "Harry" => "182"
+];
+
+echo "height = "; print_r($height);
+echo "<br><br>";
+
+foreach ($height as $nama => $tinggi) {
+    echo "$nama is $tinggi cm tall.<br>";
+}
+//4.2
+$weight = ["Andy" => "70", "Barry" => "65", "Charlie" => "75"];
+
+echo "<br>weight = "; print_r($weight);
+echo "<br>";
+
+foreach ($weight as $nama => $berat) {
+    echo "$nama is $berat kg.<br>";
+}
+?>
