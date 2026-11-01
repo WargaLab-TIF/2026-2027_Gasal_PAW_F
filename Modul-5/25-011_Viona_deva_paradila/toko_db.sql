@@ -1,5 +1,5 @@
-CREATE DATABASE IF NOT EXISTS db_penjualan;
-USE db_penjualan;
+CREATE DATABASE IF NOT EXISTS toko_db;
+USE toko_db;
 
 CREATE TABLE pelanggan (
     id INT AUTO_INCREMENT NOT NULL,
