@@ -8,6 +8,9 @@ $height['Draco']    = "169";
 $height['Harmonie'] = "160";
 $height['Malfoy']   = "170";
 
+array_pop($height);
+array_pop($height);
+
 echo "Height = (";
 $i = 0;
 foreach($height as $key => $value){
@@ -26,8 +29,10 @@ foreach($height as $key => $value){
 
 echo "<br><br>4.2<br>";
 $weight = ["Andy" => "70", "Barry" => "65", "Charlie" => "75"];
-$nama = ["Andy", "Barry", "Charlie"];
+$nama = ["Andy", "Barry", "Charlie", "Hafiz", "Rahman"];
 
+$weight['Hafiz'] = "90";
+$weight['Rahman'] = "70";
 echo "weight = (";
 for ($i = 0; $i < count($nama); $i++) {
     echo '"' . $nama[$i] . '"=>"' . $weight[$nama[$i]] . '"';
