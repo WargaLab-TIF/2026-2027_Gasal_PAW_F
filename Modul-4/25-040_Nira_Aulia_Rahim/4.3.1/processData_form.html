@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Register</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ffffff;
+            margin: 15px;
+            font-size: 12px; 
+        }
+        h1 {
+            font-size: 20px; 
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        fieldset {
+            background-color: #e6e6fa;
+            border: 1px solid #7a7a99;
+            padding: 10px 15px; 
+            width: fit-content;
+        }
+        legend {
+            font-weight: bold;
+            font-size: 12px;
+            padding: 0 4px;
+        }
+        .field {
+            margin-bottom: 6px; 
+            display: flex;
+            align-items: center;
+        }
+        .field label {
+            width: 100px; 
+            text-align: right;
+            padding-right: 10px;
+            font-size: 12px;
+        }
+        input, select, textarea {
+            font-size: 11px; 
+            padding: 2px;
+        }
+        textarea {
+            vertical-align: top;
+        }
+        
+        .field .buttons {
+            margin-left: 110px;
+        }
+        .buttons input {
+            font-size: 11px;
+            padding: 2px 8px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Register</h1>
+
+<fieldset>
+<legend>Person Details</legend>
+
+<form name="myForm" action="processData.php" method="POST">
+    <div class="field">
+        <label for="surname">Surname</label>
+        <input type="text" name="surname" id="surname" size="22"/>
+    </div>
+
+    <div class="field">
+        <label for="email">Email address</label>
+        <input type="text" name="email" id="email" size="22"/>
+    </div>
+
+    <div class="field">
+        <label for="passwd">Password</label>
+        <input type="password" name="passwd" id="passwd" size="22"/>
+    </div>
+
+    <div class="field" style="align-items: flex-start;">
+        <label for="address">Street Address</label>
+        <textarea name="address" id="address" rows="3" cols="18"></textarea>
+    </div>
+
+    <div class="field">
+        <label for="state">State</label>
+        <select name="state" id="state">
+            <option value="-1" selected>[Choose your state]</option>
+            <option value="1">Australian Capital Territory</option>
+            <option value="2">Queensland</option>
+            <option value="3">Victoria</option>
+            <option value="4">New South Wales</option>
+            <option value="5">Tasmania</option>
+            <option value="6">South Australia</option>
+            <option value="7">Western Australia</option>
+            <option value="8">Northern Territory</option>
+        </select>
+    </div>
+
+    <div class="field">
+        <input type="hidden" name="country" value="Australia">
+    </div>
+
+    <div class="field">
+        <label>Gender</label>
+        <div>
+            <input type="radio" name="sex" value="male" id="male"/><label for="male" style="display:inline; text-align:left; width:auto; padding-right:8px;">Male</label>
+            <input type="radio" name="sex" value="female" id="female"/><label for="female" style="display:inline; text-align:left; width:auto;">Female</label>
+        </div>
+    </div>
+
+    <div class="field">
+        <label for="vegetarian">Vegetarian?</label>
+        <input type="checkbox" name="vegetarian" id="vegetarian"/>
+    </div>
+
+    <div class="field">
+        <div class="buttons">
+            <input type="submit" value="Submit" name="submit"/>
+            <input type="reset" value="Reset" name="reset"/>
+        </div>
+    </div>
+</form>
+
+</fieldset>
+
+</body>
+</html>
