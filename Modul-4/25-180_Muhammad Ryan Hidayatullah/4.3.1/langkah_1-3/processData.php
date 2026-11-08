@@ -25,6 +25,11 @@ if (validateName($_POST, 'surname'))
 else
     echo 'Data invalid!';
 // LANGKAH 3: pengujian - isi surname dengan data benar
+if (validatePassword($_POST, 'passwd'))
+    echo 'Data OK!';
+else
+    echo 'Data invalid!';
+
 ?>
 </body>
 </html>
