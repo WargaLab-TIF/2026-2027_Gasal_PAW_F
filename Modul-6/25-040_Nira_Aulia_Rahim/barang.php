@@ -1,11 +1,8 @@
 <?php
 include 'koneksi.php';
 
-// Proses hapus jika parameter action=hapus ada
 if (isset($_GET['action']) && $_GET['action'] == 'hapus') {
     $id_barang = $_GET['id'];
-    
-    // Validasi Poin 3: Cek apakah barang dipakai di transaksi_detail
     $cek_pakai = mysqli_query($koneksi, "SELECT * FROM transaksi_detail WHERE barang_id = '$id_barang'");
     
     if (mysqli_num_rows($cek_pakai) > 0) {
