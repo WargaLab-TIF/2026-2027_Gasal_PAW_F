@@ -5,8 +5,8 @@ foreach ($_POST as $key => $value)
 require 'validate.inc';
 $errors = array();
 
-validateName($errors, $_POST, 'surname');
-
+validateName($errors, $_POST, 'surname',);
+validatePassword($errors, $_POST, 'passwd');
 if ($errors)
 {
     echo 'Errors:<br/>';
