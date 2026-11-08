@@ -1,0 +1,211 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", system-ui, Arial, sans-serif;
+  background: #f1f5f9;
+  color: #1e293b;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 28px 20px 50px;
+}
+
+h1 {
+  font-size: 28px;
+  color: #1e3a8a;
+  margin: 0 0 8px;
+}
+
+h2 {
+  font-size: 21px;
+  color: #1e3a8a;
+  margin: 32px 0 10px;
+  padding-left: 12px;
+  border-left: 5px solid #3b82f6;
+}
+
+h3 {
+  font-size: 17px;
+  color: #334155;
+  margin: 26px 0 10px;
+}
+
+p {
+  color: #475569;
+  line-height: 1.6;
+}
+
+a {
+  color: #2563eb;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+h1 + p > a {
+  display: inline-block;
+  padding: 8px 16px;
+  background: #ffffff;
+  border: 1px solid #bfdbfe;
+  border-radius: 8px;
+}
+
+h1 + p > a:hover {
+  background: #eff6ff;
+  text-decoration: none;
+}
+
+table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  overflow: hidden;
+  margin: 12px 0 24px;
+  box-shadow: 0 2px 6px rgba(15, 23, 42, 0.08);
+}
+
+th {
+  background: #1e40af;
+  color: #ffffff;
+  text-align: left;
+  font-size: 13px;
+  letter-spacing: 0.4px;
+  padding: 12px 14px;
+  border: 0;
+}
+
+td {
+  font-size: 14px;
+  padding: 10px 14px;
+  border: 0;
+  border-bottom: 1px solid #eef2f7;
+}
+
+tr:nth-child(even) td {
+  background: #f8fafc;
+}
+
+tr:hover td {
+  background: #eaf2ff;
+}
+
+td[colspan],
+td[colspan] + td {
+  background: #e0e7ff;
+  font-weight: 700;
+  color: #1e3a8a;
+  border-bottom: 0;
+}
+
+td[colspan] {
+  text-align: right;
+}
+
+td a {
+  display: inline-block;
+  padding: 5px 12px;
+  background: #eff6ff;
+  border: 1px solid #bfdbfe;
+  border-radius: 6px;
+  font-size: 13px;
+}
+
+td a:hover {
+  background: #dbeafe;
+  text-decoration: none;
+}
+
+/* tombol Hapus berwarna merah */
+a[href*="barang_hapus"] {
+  color: #b91c1c;
+  background: #fef2f2;
+  border-color: #fecaca;
+}
+
+a[href*="barang_hapus"]:hover {
+  background: #fee2e2;
+}
+
+/* ---------- Form tambah detail ---------- */
+form {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 18px 20px;
+  box-shadow: 0 2px 6px rgba(15, 23, 42, 0.08);
+}
+
+input[type="hidden"] {
+  display: none;
+}
+
+select,
+input[type="number"] {
+  font-size: 14px;
+  padding: 9px 12px;
+  background: #ffffff;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  color: #1e293b;
+}
+
+select {
+  min-width: 280px;
+}
+
+input[type="number"] {
+  width: 90px;
+}
+
+select:focus,
+input[type="number"]:focus {
+  outline: none;
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.25);
+}
+
+button {
+  font-size: 14px;
+  font-weight: 600;
+  padding: 10px 22px;
+  background: #2563eb;
+  color: #ffffff;
+  border: 0;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #1d4ed8;
+}
+
+@media (max-width: 700px) {
+  table {
+    display: block;
+    overflow-x: auto;
+  }
+
+  form {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  select {
+    min-width: 0;
+  }
+
+  input[type="number"] {
+    width: 100%;
+  }
+}
