@@ -1,0 +1,172 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 30px;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+h2 {
+    margin-bottom: 15px;
+    font-size: 40px;
+    font-family: Poppins;
+    color: #378eda;
+}
+
+.color-th1 {
+    background-color: cornflowerblue;
+    color: white;
+    align-items: center;
+}
+
+.btn {
+    display: inline-block;
+    padding: 8px 14px;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 4px;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+}
+
+.container {
+    display: flex;
+
+}
+
+/* icon */
+.material-symbols-outlined {
+    vertical-align: middle;
+}
+
+/* icon END*/
+
+
+.btn-tambah,
+.btn-save {
+    background-color: #14ad38;
+    margin-bottom: 15px;
+    margin-left: auto;
+    font-size: 17px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+.btn-tambah:hover,
+.btn-save:hover {
+    background: #218839;
+}
+
+.btn-edit {
+    background-color: #dda910;
+    color: #000;
+    border-radius: 5px;
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+
+.btn-edit:hover {
+    background: #9e7808;
+}
+
+
+.btn-hapus {
+    background-color: #af2e2e;
+    border-radius: 5px;
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+
+.btn-hapus:hover,
+.btn-cancel:hover {
+    background: #831212;
+}
+
+.btn-cancel {
+    background-color: #af2e2e;
+    margin-bottom: 15px;
+    margin-left: auto;
+    font-size: 17px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#container-tabel {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #d8e9f9;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+#tambah-body {
+    background-color: #dbf1f7;
+
+}
+
+#tambah-body::before {
+    background-size: cover;
+    background-position: center;
+    filter: blur(5px);
+    z-index: -1;
+    transform: scale(1.1);
+}
+
+#container-tambah {
+    background-color: #FFFFFF;
+    width: 50%;
+
+}
+
+#container-tambah h2 {
+    text-align: center;
+}
+
+#container-tabel,
+th,
+td {
+    border: 1px solid #ffffff;
+}
+
+th,
+td {
+    padding: 10px 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #fffdfd;
+}
+
+.tr-idx:hover {
+    background-color: #cad8ea;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+textarea {
+    width: 400px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+textarea {
+    height: 80px;
+}
