@@ -1,0 +1,173 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f5f7;
+    color: #6a453b;
+    padding: 25px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+h2 {
+    color: #6a453b;
+    margin-bottom: 6px;
+    font-size: 22px;
+}
+
+p {
+    color: #777;
+    font-size: 13px;
+    margin-bottom: 20px;
+}
+
+.menu {
+    margin-bottom: 15px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 3px;
+    background:#1c477f;
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.btn-green {
+    background: #6a453b
+}
+
+.btn-red {
+    background: #b75c5c;
+}
+
+.btn-gray {
+    background: #727e8c;
+}
+
+.btn:hover {
+    opacity: 0.85;
+}
+
+.section {
+    background: white;
+    border: 1px solid #6a453b;
+    padding: 18px;
+    margin-top: 18px;
+}
+
+.section-title {
+    color: #6a453b;
+    font-weight: bold;
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
+.table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    font-size: 13px;
+}
+
+th {
+    background: #6a453b;
+    color: white;
+    padding: 11px;
+    text-align: left;
+    white-space: nowrap;
+}
+
+td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+tbody tr:nth-child(even) {
+    background: #f6f7f9;
+}
+
+tbody tr:hover {
+    background: #edf1f5;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-bold {
+    font-weight: bold;
+}
+
+.alert {
+    padding: 10px;
+    margin-bottom: 12px;
+    font-size: 13px;
+    border-radius: 3px;
+}
+
+.alert-success {
+    background: #e5f2eb;
+    color: #286448;
+}
+
+.alert-error {
+    background: #f8e9e9;
+    color: #983e3e;
+}
+
+form {
+    margin-top: 15px;
+}
+
+label {
+    display: block;
+    font-size: 13px;
+    font-weight: bold;
+    margin: 12px 0 6px;
+}
+
+select,
+input {
+    width: 100%;
+    max-width: 400px;
+    padding: 9px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    background: white;
+}
+
+button {
+    margin-top: 15px;
+}
+
+@media (max-width: 700px) {
+    body {
+        padding: 12px;
+    }
+
+    table {
+        min-width: 650px;
+    }
+
+    .section {
+        padding: 12px;
+    }
+}
