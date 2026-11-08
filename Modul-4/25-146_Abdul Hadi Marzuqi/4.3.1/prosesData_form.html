@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modul-04-Form_Input_Handling</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 12px;
+        }
+        fieldset{
+            background-color:bisque;
+            width: 450px;
+            border: 1px solid rgb(0, 0, 0);
+            border-radius: 10px;
+            box-shadow: 0 5px 5px rgb(0, 0, 0);
+        }
+        legend{
+            font-weight: bolder;
+            background-color: rgb(0, 148, 240);
+            border-radius: 5px;
+            width: 100px;
+            text-align: center;
+        }
+
+        .field{
+            display: flex;
+            align-items:flex-start;
+            margin-bottom: 10px;
+        }
+
+        .field label{
+            width: 120px;
+            text-align: justify;
+            padding-right: 10px;
+            flex-shrink: 100;
+        }
+
+        input[type = submit], input[type = reset]{
+            padding: 5px 14px;
+            margin-right : 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Registrasi</h1>
+    <fieldset>
+    <legend>Data Diri</legend>
+    <br>
+    <form name="form" action="prosesData.php" method="POST">
+        <div class="field">
+            <label for="surname">Surname :</label>
+            <input type="text" name="surname" size="40">
+        </div>
+        
+        <div class="field">
+            <label for="email">Email Address :</label>
+            <input type="email" name="email" size="40">
+        </div>
+        
+        <div class="field">
+            <label for="password">Password :</label>
+            <input type="password" name="password" size="8">
+        </div>
+
+        <div class="field">
+            <label for="alamat_jalan">Street Address :</label>
+            <textarea name="alamat_jalan" rows="3" cols="22"></textarea>
+        </div>
+
+        <div class="field">
+            <label for="state">State :</label>
+            <select name="state">
+                <option value="-1" selected>[Choose your state]</option>
+                <option value="1" >Lamongan</option>
+                <option value="2" >Gresik</option>
+                <option value="3" >Mojokerto</option>
+                <option value="4" >Surabaya</option>
+                <option value="5" >Malang</option>
+                <option value="6" >Yogyakarta</option>
+                <option value="7" >Madiun</option>
+                <option value="8" >Nganjuk</option>
+            </select>
+        </div>
+
+        <div class="field">
+            <input type="hidden" name="country" value="Australia">
+        </div>
+
+        <div class="field">
+            <label for="gender">Gender :</label>
+            <input type="radio" name="gender" value="Male" />Male
+            <input type="radio" name="gender" value="Female"/>Female
+        </div>
+        
+        <div class="field">
+            <label for="sayur">Vegetarian?</label>
+            <input type="checkbox" name="sayur">
+        </div>
+
+        <div class="field">
+            <label>&nbsp;</label>
+            <input type="submit" value="Submit" name="submit">
+            <input type="reset" name="reset" value="Reset">
+        </div>
+
+    </form>
+    </fieldset>
+</body>
+</html>
