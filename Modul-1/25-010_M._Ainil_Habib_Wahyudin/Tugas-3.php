@@ -1,0 +1,17 @@
+<?php
+echo "<h1>Hello world</h1>"; //ini non-embeded script
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas-2</title>
+</head>
+<body>
+    <H1><?php echo "Hello world";
+    // ini embeded-script
+
+?></H1> 
+</body>
+</html>

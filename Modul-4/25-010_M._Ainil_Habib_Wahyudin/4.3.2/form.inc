@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      .field {
+        display: flex;
+        align-items: flex-start;
+        gap: 10px;
+        margin-bottom: 5px;
+      }
+
+      .field label {
+        display: inline-block;
+        width: 120px;
+        flex-shrink: 0;
+        text-align: end;
+      }
+    </style>
+  </head>
+  <body>
+    <legend>Person Details</legend>
+    <form name="myForm" action="processData_form.php" method="post">
+      <div class="field">
+        <label for="surname">Surname</label>
+        <input
+          type="text"
+          id="surname"
+          name="surname"
+          value="<?= htmlspecialchars($_POST['surname'] ?? '') ?>"
+          size="31"
+        />
+      </div>
+
+      <div class="field">
+        <label for="email">Email address</label>
+        <input
+          type="text"
+          id="email"
+          name="email"
+          value="<?= htmlspecialchars($_POST['email'] ?? '') ?>"
+          size="31"
+        />
+      </div>
+
+      <div class="field">
+        <label for="passwd">password</label>
+        <input
+          type="password"
+          id="passwd"
+          name="passwd"
+          value="<?= htmlspecialchars($_POST['passwd'] ?? '') ?>"
+          size="31"
+        />
+      </div>
+
+      <div class="field">
+        <label for="address">Street Address</label>
+        <textarea id="address" name="address" rows="3" cols="22">
+<?= htmlspecialchars($_POST['address'] ?? '') ?></textarea
+        >
+      </div>
+
+      <div class="field">
+        <label for="state">State</label>
+        <select id="state" name="state">
+          <option value="-1">[choose your state]</option>
+          <option value="1">Australian Capital Territory</option>
+          <option value="2">Queenland</option>
+          <option value="3">Victoria</option>
+          <option value="4">New South Wales</option>
+          <option value="5">Tasmaria</option>
+          <option value="6">South Australia</option>
+          <option value="7">Western Australia</option>
+          <option value="8">Northen Australia</option>
+        </select>
+      </div>
+
+      <div class="field">
+        <input type="hidden" name="country" value="Australia" />
+      </div>
+
+      <div class="field">
+        <label for="sex-male">gender</label>
+        <input type="radio" id="sex-male" name="sex" value="male" />Male
+        <input type="radio" id="sex-female" name="sex" value="female" />Female
+      </div>
+      <div class="field">
+        <label for="vegetarian">Vegetarian?</label>
+        <input type="checkbox" id="vegetarian" name="vegetarian" />
+      </div>
+
+      <div class="field">
+        <label>&nbsp;</label>
+        <input type="submit" value="submit" name="submit" />
+        <input type="reset" value="reset" name="reset" />
+      </div>
+    </form>
+  </body>
+</html>
