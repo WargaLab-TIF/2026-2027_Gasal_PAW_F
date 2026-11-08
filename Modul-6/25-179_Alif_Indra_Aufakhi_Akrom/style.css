@@ -1,0 +1,180 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f6f9;
+    color: #333;
+    padding: 25px;
+}
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+}
+
+header {
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+}
+
+header h1 {
+    font-size: 25px;
+    margin-bottom: 8px;
+}
+
+header p {
+    color: #777;
+    font-size: 14px;
+}
+
+nav {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    background: #fff;
+    padding: 12px 18px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+nav a.active,
+nav a:hover {
+    background: #2563eb;
+    color: white;
+    border-color: #2563eb;
+}
+
+.form-section,
+.table-section {
+    background: white;
+    padding: 22px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 20px;
+    margin-bottom: 18px;
+}
+
+h3 {
+    margin: 18px 0 12px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 7px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+textarea {
+    min-height: 80px;
+    resize: vertical;
+}
+
+button,
+.btn-detail {
+    display: inline-block;
+    padding: 10px 15px;
+    background: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+button:hover,
+.btn-detail:hover {
+    background: #1d4ed8;
+}
+
+.btn-hapus {
+    background: #dc2626;
+}
+
+.btn-hapus:hover {
+    background: #b91c1c;
+}
+
+.table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th,
+td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+    font-size: 14px;
+}
+
+th {
+    background: #f1f5f9;
+}
+
+.pesan {
+    background: #e0f2fe;
+    color: #075985;
+    padding: 12px;
+    border-radius: 5px;
+    margin-bottom: 18px;
+    border: 1px solid #bae6fd;
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 12px;
+    }
+
+    header h1 {
+        font-size: 21px;
+    }
+
+    .form-section,
+    .table-section {
+        padding: 15px;
+    }
+
+    nav a {
+        padding: 10px;
+        font-size: 13px;
+    }
+}
