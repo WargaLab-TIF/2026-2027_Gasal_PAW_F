@@ -60,3 +60,20 @@ CREATE TABLE user (
   hp VARCHAR(20) NOT NULL,
   level TINYINT(1) NOT NULL
 );
+
+
+
+
+
+
+INSERT INTO supplier (nama, telp, alamat) VALUES 
+('PT Maju Bersama', '08123456', 'Surabaya'),
+('PT. Senang Sekali', '081515563', 'Bangkalan'),
+('PT Segar Segar', '0845454663', 'Surabaya'),
+('PT Jaya Abadi', '0811223344', 'Jakarta'),
+('PT Berkah Selalu', '0822334455', 'Malang'),
+('PT Suka Makmur', '0833445566', 'Sidoarjo'),
+('PT Harapan Kita', '0844556677', 'Bandung'),
+('PT Sumber Rejeki', '0855667788', 'Semarang'),
+('PT Mitra Sejati', '0866778899', 'Yogyakarta'),
+('PT Makmur Jaya', '0877889900', 'Denpasar');

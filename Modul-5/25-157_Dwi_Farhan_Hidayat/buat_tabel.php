@@ -1,6 +1,6 @@
 <?php
 include 'koneksi.php';
-$sql = "CREATE TABLE 'user' (
+$sql = "CREATE TABLE user (
           id_user TINYINT(2) NOT NULL AUTO_INCREMENT PRIMARY KEY,
           username VARCHAR(30) NOT NULL,
           password VARCHAR(35) NOT NULL,
