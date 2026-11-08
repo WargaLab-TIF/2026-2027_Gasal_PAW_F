@@ -1,0 +1,33 @@
+*{box-sizing:border-box}
+body{margin:0;font:15px/1.5 system-ui,Segoe UI,Arial,sans-serif;background:#f4f6f9;color:#1f2933}
+.nav{display:flex;gap:18px;align-items:center;padding:12px 24px;background:#1e3a5f;color:#fff}
+.nav a{color:#cfe0f5;text-decoration:none}.nav a:hover{color:#fff;text-decoration:underline}
+.wrap{max-width:1000px;margin:24px auto;padding:0 16px}
+h1{margin:0 0 16px}h2{margin:28px 0 10px;font-size:1.2em}h3{margin:0 0 10px;font-size:1em}
+table{width:100%;border-collapse:collapse;background:#fff;border:1px solid #d9e0e8}
+th,td{padding:8px 10px;border-bottom:1px solid #e6ebf1;text-align:left;vertical-align:middle}
+th{background:#eaf0f7;font-weight:600}tfoot td{background:#f7f9fc}
+.num{text-align:right}tr.aktif td{background:#fff7d6}
+.btn{display:inline-block;padding:5px 12px;border:1px solid #9fb3c8;border-radius:5px;background:#fff;
+  color:#1e3a5f;text-decoration:none;cursor:pointer;font:inherit}
+.btn:hover{background:#eaf0f7}
+.btn.primary{background:#1e6fd9;border-color:#1e6fd9;color:#fff}
+.btn.danger{background:#fff;border-color:#d64545;color:#d64545}.btn.danger:hover{background:#fdeaea}
+form{margin:0}
+.box{margin-top:14px;padding:14px;background:#fff;border:1px solid #d9e0e8;border-radius:6px}
+.row{display:flex;flex-wrap:wrap;gap:12px;align-items:flex-end;margin-top:10px}
+.row label{display:flex;flex-direction:column;font-size:.85em;color:#52606d;gap:3px}
+.row .grow{flex:1;min-width:200px}
+input,select{padding:6px 8px;border:1px solid #b6c2cf;border-radius:5px;font:inherit}
+output{padding:6px 0;font-weight:600;color:#1f2933}
+.alert{padding:10px 14px;border-radius:6px;margin-bottom:16px;border:1px solid}
+.alert.success{background:#e6f6ec;border-color:#8fd3a8;color:#14532d}
+.alert.error{background:#fdeaea;border-color:#f0a5a5;color:#7f1d1d}
+.muted{color:#7b8794}
+.info{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:10px;margin:0 0 14px;
+  padding:12px;background:#fff;border:1px solid #d9e0e8;border-radius:6px}
+.info dt{font-size:.8em;color:#7b8794}.info dd{margin:0}
+.cards{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:20px}
+.card{flex:1;min-width:130px;padding:14px;background:#fff;border:1px solid #d9e0e8;border-radius:8px;text-align:center}
+.card b{display:block;font-size:1.8em;color:#1e6fd9}.card span{color:#52606d}
+summary{cursor:pointer;font-weight:600}
