@@ -1,0 +1,129 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 30px;
+    background-color: white;
+    color: #555;
+}
+
+.container {
+    width: 100%;
+}
+
+h2 {
+    color: #568b9c;
+    font-size: 24px;
+    font-weight: normal;
+    margin-bottom: 25px;
+}
+
+.tambah {
+    text-align: right;
+    margin-bottom: 15px;
+}
+
+.tambah a {
+    background-color: #70b94d;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 13px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+}
+
+th {
+    background-color: #d9edf7;
+    color: #555;
+    text-align: left;
+    padding: 12px;
+    font-weight: normal;
+}
+
+td {
+    border-bottom: 1px solid #ddd;
+    padding: 12px;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.edit, .hapus {
+    color: white;
+    padding: 8px 12px;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 12px;
+}
+
+.edit {
+    background-color: #e97820;
+}
+
+.hapus {
+    background-color: #c9302c;
+}
+
+.form-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    width: 100px;
+    text-align: right;
+    margin-right: 20px;
+    font-size: 13px;
+}
+
+.form-group input,
+.form-group select {
+    width: 322px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 13px;
+    background-color: white;
+    box-sizing: border-box;
+}
+
+.form-group input[readonly] {
+    background-color: #eee;
+}
+
+.form-button {
+    margin-left: 120px;
+    margin-top: 20px;
+}
+
+.form-button button,
+.form-button a {
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.form-button button {
+    background-color: #70b94d;
+}
+
+.form-button a {
+    background-color: #c9302c;
+}
+
+p {
+    font-size: 14px;
+    color: #555;
+    margin-top: 20px;
+}
